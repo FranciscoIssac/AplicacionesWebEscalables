@@ -1,0 +1,4 @@
+<app-product-list (selectedProduct)="onProductSelected($event)"></app-product-list>
+
+<h3>Detalles del producto</h3>
+<app-product-detail *ngIf="selectedProduct" [product]="selectedProduct"></app-product-detail>
